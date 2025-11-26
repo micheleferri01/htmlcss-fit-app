@@ -89,3 +89,16 @@ select:focus-visible {
     right: 0px;
     color: white;
 }
+
+/* punto 11 e punto 12 */
+/* sfondo più scuro e testo blu. */
+a:hover {
+    background-color: #34495e;
+    color: blue;
+}
+
+/* primo link in stato sempre attivo */
+a:first-child {
+    background-color: #34495e;
+    color: blue;
+}
