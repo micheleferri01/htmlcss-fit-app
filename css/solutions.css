@@ -5,3 +5,18 @@
     display: block;
 }
 
+/* punto 2 */
+/* gradiente a testo bianco */
+.stats-container :nth-child(3){
+    background-image: linear-gradient(
+        135deg,
+        #6779e3 0%,
+        #7551ab 100%,
+        transparent
+    );
+}
+
+.stats-container .stats-grid:nth-child(3) > *{
+    color: white;
+}
+
