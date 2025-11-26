@@ -20,3 +20,9 @@
     color: white;
 }
 
+/* punto 3 */
+/* ombre e sollevamento */
+.stats-grid:hover{
+    box-shadow: 5px 10px gray;
+    translate: 5px;
+}
