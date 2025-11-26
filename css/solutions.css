@@ -1,0 +1,7 @@
+/* punto 1 */
+/* aggiunta fire emoji */
+.stats-container :first-child > span:before{
+    content: '🔥';
+    display: block;
+}
+
