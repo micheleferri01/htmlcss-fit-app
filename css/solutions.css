@@ -1,75 +1,91 @@
 /* punto 1 */
 /* aggiunta fire emoji */
-.stats-container :first-child > span::before{
+.stats-container :first-child>span::before {
     content: '🔥';
     display: block;
 }
 
 /* punto 2 */
 /* gradiente a testo bianco */
-.stats-container :nth-child(3){
-    background-image: linear-gradient(
-        135deg,
-        #6779e3 0%,
-        #7551ab 100%,
-        transparent
-    );
+.stats-container :nth-child(3) {
+    background-image: linear-gradient(135deg,
+            #6779e3 0%,
+            #7551ab 100%,
+            transparent);
 }
 
-.stats-container .stats-grid:nth-child(3) > *{
+.stats-container .stats-grid:nth-child(3)>* {
     color: white;
 }
 
 /* punto 3 */
 /* ombre e sollevamento */
-.stats-grid:hover{
+.stats-grid:hover {
     box-shadow: 5px 10px gray;
     translate: 5px;
 }
 
 /* punto 4 */
 /* bordo a sinistra e colore sfondo del workout plan "Forza e Resistenza" */
-.workout-plan:nth-child(3){
+.workout-plan:nth-child(3) {
     background-color: #fff8ba;
     border-left: 5px solid #f39c12;
 }
 
 /* punto 5 */
 /*  bordo e sfondo verde per il primo e l'ultimo esercizio*/
-.exercise-item:first-child, .exercise-item:last-child{
+.exercise-item:first-child,
+.exercise-item:last-child {
     border-color: #2ecc71;
     background-color: rgb(216, 255, 216);
 }
 
 /* punto 6 */
 /* emoji del fulmine per schede esercizi in posizioni pari */
-.exercise-item:nth-child(2n) .exercise-name::before{
+.exercise-item:nth-child(2n) .exercise-name::before {
     content: '⚡';
-    display:block;
+    display: block;
 }
 
 /* punto 7 e punto 8 */
 /* ombre, bordi e transizione per campi di input */
-input, select{
+input,
+select {
     transition-property: border;
 }
 
-input:focus, select:focus{
+input:focus,
+select:focus {
     border: 1px solid #6779e3;
     transition-delay: 3s;
     transition-duration: 5s;
     box-shadow: 5px 5px 10px 0px blue;
 }
 
-input:focus-visible, select:focus-visible{
+input:focus-visible,
+select:focus-visible {
     outline: #6779e3;
 }
 
 /* punto 9 */
 /* modifiche save button */
-.save-btn:hover{
+.save-btn:hover {
     background-color: #3f71a3;
     translate: 2px;
     box-shadow: 5px 5px 10px 0px blue;
 
+}
+
+/* punto 10 */
+/* modificata posizione e colore della percentuale di completamento */
+.progress-fill {
+    position: relative;
+}
+
+.progress-fill::before {
+    content: "65%";
+    position: absolute;
+    top: -7px;
+    right: 0px;
+    color: white;
 }
