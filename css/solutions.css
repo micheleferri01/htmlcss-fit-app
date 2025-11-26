@@ -65,3 +65,11 @@ input:focus-visible, select:focus-visible{
     outline: #6779e3;
 }
 
+/* punto 9 */
+/* modifiche save button */
+.save-btn:hover{
+    background-color: #3f71a3;
+    translate: 2px;
+    box-shadow: 5px 5px 10px 0px blue;
+
+}
