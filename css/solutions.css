@@ -33,3 +33,10 @@
     background-color: #fff8ba;
     border-left: 5px solid #f39c12;
 }
+
+/* punto 5 */
+/*  bordo e sfondo verde per il primo e l'ultimo esercizio*/
+.exercise-item:first-child, .exercise-item:last-child{
+    border-color: #2ecc71;
+    background-color: rgb(216, 255, 216);
+}
