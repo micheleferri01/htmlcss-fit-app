@@ -1,6 +1,6 @@
 /* punto 1 */
 /* aggiunta fire emoji */
-.stats-container :first-child > span:before{
+.stats-container :first-child > span::before{
     content: '🔥';
     display: block;
 }
@@ -39,4 +39,11 @@
 .exercise-item:first-child, .exercise-item:last-child{
     border-color: #2ecc71;
     background-color: rgb(216, 255, 216);
+}
+
+/* punto 6 */
+/* emoji del fulmine per schede esercizi in posizioni pari */
+.exercise-item:nth-child(2n) .exercise-name::before{
+    content: '⚡';
+    display:block;
 }
