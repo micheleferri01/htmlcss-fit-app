@@ -47,3 +47,21 @@
     content: '⚡';
     display:block;
 }
+
+/* punto 7 e punto 8 */
+/* ombre, bordi e transizione per campi di input */
+input, select{
+    transition-property: border;
+}
+
+input:focus, select:focus{
+    border: 1px solid #6779e3;
+    transition-delay: 3s;
+    transition-duration: 5s;
+    box-shadow: 5px 5px 10px 0px blue;
+}
+
+input:focus-visible, select:focus-visible{
+    outline: #6779e3;
+}
+
