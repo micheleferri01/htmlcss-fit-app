@@ -26,3 +26,10 @@
     box-shadow: 5px 10px gray;
     translate: 5px;
 }
+
+/* punto 4 */
+/* bordo a sinistra e colore sfondo del workout plan "Forza e Resistenza" */
+.workout-plan:nth-child(3){
+    background-color: #fff8ba;
+    border-left: 5px solid #f39c12;
+}
