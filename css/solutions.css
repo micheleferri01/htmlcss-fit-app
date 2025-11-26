@@ -102,3 +102,25 @@ a:first-child {
     background-color: #34495e;
     color: blue;
 }
+
+/* punto 13 */
+/* virgolette decorative per la citazione */
+.quote-box {
+    position: relative;
+}
+
+.quote-box>p::before {
+    content: '"';
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    translate: -29px -33px;
+    font-size: 4rem;
+}
+
+.quote-box>p::after {
+    content: '"';
+    position: absolute;
+    color: rgba(255, 255, 255, 0.5);
+    translate: 80px -35px;
+    font-size: 4rem;
+}
