@@ -51,19 +51,14 @@
 /* ombre, bordi e transizione per campi di input */
 input,
 select {
-    transition-property: border;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 input:focus,
 select:focus {
     border: 1px solid #6779e3;
-    transition-duration: 2s;
     box-shadow: 5px 5px 10px 0px blue;
-}
-
-input:focus-visible,
-select:focus-visible {
-    outline: #6779e3;
+    outline: none;
 }
 
 /* punto 9 */
@@ -71,7 +66,7 @@ select:focus-visible {
 .save-btn:hover {
     background-color: #3f71a3;
     translate: 2px;
-    box-shadow: 5px 5px 10px 0px blue;
+    box-shadow: 2px 2px 10px blue;
 
 }
 
@@ -126,9 +121,17 @@ a:first-child {
 
 /* bonus */
 a {
-    transition: width 0.5s;
+    transition: width 0.3s;
 }
 
 a:hover {
     width: 26%;
+}
+
+.save-btn{
+    transition: box-shadow 0.3s ease, translate 0.3s ease;
+}
+
+.stats-grid{
+    transition: all 0.3s ease;
 }
